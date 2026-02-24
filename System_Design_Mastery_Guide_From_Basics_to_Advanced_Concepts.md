@@ -18,8 +18,11 @@ Key principles and goals include clear separation of concerns, statelessness whe
 
 ## 2. Single Server Setup
 
-image 0
+<kbd>
+  <img src="https://github.com/MinenhleNkosi/System_Design_Mastery/blob/main/images/0.jpeg" height="600" width="1000" />
+</kbd>
 
+---
 For Beginners:
 A single server architecture hosts the web server, application logic, and database on one machine. DNS resolves your domain to the server’s IP; clients send HTTP/HTTPS requests, and the server replies with HTML or JSON. This simplicity reduces cost and complexity and is ideal for prototypes and low-traffic apps.
 
@@ -43,8 +46,11 @@ Real-World Example: A small blog or portfolio site on a single VPS with Nginx + 
 
 ## 3. Databases: SQL, NoSQL, Graph
 
-image 1
+<kbd>
+  <img src="https://github.com/MinenhleNkosi/System_Design_Mastery/blob/main/images/1.jpeg" height="600" width="1000" />
+</kbd>
 
+---
 SQL Databases:
 Beginner: Relational databases store data in tables (rows and columns) with defined schemas. They support joins to combine related data across tables.
 
@@ -82,8 +88,11 @@ Comparison Table:
 
 ## 4. Vertical vs Horizontal Scaling
 
-image 2
+<kbd>
+  <img src="https://github.com/MinenhleNkosi/System_Design_Mastery/blob/main/images/2.jpeg" height="600" width="1000" />
+</kbd>
 
+---
 Vertical Scaling (Scale Up):
 Beginner: Add more CPU, RAM, or faster storage to one server for instant performance gains.
 
@@ -107,8 +116,11 @@ Decision Framework:
 
 ## 5. Load Balancing
 
-image 3
+<kbd>
+  <img src="https://github.com/MinenhleNkosi/System_Design_Mastery/blob/main/images/3.jpeg" height="600" width="1000" />
+</kbd>
 
+---
 For Beginners:
 A load balancer evenly distributes incoming traffic across multiple servers to improve performance and reliability. Core algorithms include Round Robin and Least Connections. Layer 4 load balancers operate at the transport level; Layer 7 understand HTTP/HTTPS and can route by path/host.
 
@@ -138,8 +150,11 @@ app.get("/health", async (req, res) => {
 
 ## 7. Single Point of Failure (SPOF)
 
-image 4
+<kbd>
+  <img src="https://github.com/MinenhleNkosi/System_Design_Mastery/blob/main/images/4.jpeg" height="600" width="1000" />
+</kbd>
 
+---
 For Beginners:
 A SPOF is any component whose failure brings the system down. Common examples include a single database instance, a single load balancer, or a single app server. Add redundancy to avoid full outages.
 
@@ -170,8 +185,11 @@ Example error format:
 
 ## 9. API Protocols
 
-image 5
+<kbd>
+  <img src="https://github.com/MinenhleNkosi/System_Design_Mastery/blob/main/images/5.jpeg" height="600" width="1000" />
+</kbd>
 
+---
 REST:
 Beginner: Resource-based, stateless, uses standard HTTP methods and status codes.
 
@@ -192,8 +210,11 @@ Provides real-time bidirectional communication. Ideal for chat, collaborative ed
 
 ## 10. Transport Layer: TCP, UDP
 
-image 6
+<kbd>
+  <img src="https://github.com/MinenhleNkosi/System_Design_Mastery/blob/main/images/6.jpeg" height="600" width="1000" />
+</kbd>
 
+---
 TCP:
 Beginner: Reliable, connection-oriented with a three-way handshake; guarantees in-order, lossless delivery.
 
@@ -313,8 +334,11 @@ const userByIdLoader = new DataLoader(async (ids) => {
 
 ## 13. Authentication
 
-image 7
+<kbd>
+  <img src="https://github.com/MinenhleNkosi/System_Design_Mastery/blob/main/images/7.jpeg" height="600" width="1000" />
+</kbd>
 
+---
 For Beginners:
 Authentication verifies who you are. Common methods include username/password, sessions (server stores session; browser holds a cookie), and token-based auth (JWT in Authorization: Bearer).
 
